@@ -18,6 +18,7 @@ jobs:
               with:
                 distribution: 'adopt'
                 java-version: '11'
+                # mama
             - name: build artifact with maven
               run: mvn package
             - name: perform code analysis with sonarqube
