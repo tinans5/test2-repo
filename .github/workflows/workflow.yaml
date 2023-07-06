@@ -39,7 +39,7 @@ jobs:
             - name: create an elb app version for the artifact 
               run: |
                     aws elasticbeanstalk create-application-version \
-                    --application-name sonarqube-ELB\
+                    --application-name sonarqube-ELB \
                     --source-bundle S3Bucket="sonarqubebucket2243",S3Key="xashy-webapp.war" \
                     --version-label "ver-${{ github.sha }}" \
                     --description "commit-sha-${{ github.sha }}"
