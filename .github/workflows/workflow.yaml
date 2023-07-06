@@ -27,7 +27,7 @@ jobs:
             - name: publish to github packages
               run: mvn --batch-mode deploy
               env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: authenticate to aws account
               uses: aws-actions/configure-aws-credentials@v1
               with:
